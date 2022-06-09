@@ -132,5 +132,26 @@
             <version>42.3.4</version>
         </dependency>
     </dependencies>
+ <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>ru.yandex.qatools.allure</groupId>
+                <artifactId>allure-maven-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <version>1.5.4</version>
+                    <properties>
 
+                        <allureResultsDirectory>${basedir}/target/allure-results
+                        </allureResultsDirectory>
+
+                    </properties>
+
+                </configuration>
+
+            </plugin>
+        </plugins>
+
+    </reporting>
 </project>
