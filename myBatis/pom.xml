@@ -14,7 +14,12 @@
         <jupiter.version>5.8.2</jupiter.version>
         <mybatis.plugin.version>1.3.7</mybatis.plugin.version>
     </properties>
-
+<systemProperties>
+          <property>
+                    <name>allure.results.directory</name>
+                    <value>/Users/aleksandr/.jenkins/workspace/test/allure-report</value>
+           </property>
+ </systemProperties>
     <build>
         <resources>
             <resource>
